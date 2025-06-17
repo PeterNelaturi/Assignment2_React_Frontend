@@ -7,7 +7,7 @@ function RoomList() {
   useEffect(() => {
     async function fetchRooms() {
       try {
-        const response = await axios.get('http://localhost:8000/api/rooms/');
+        const response = await axios.get('https://assignment2-backendrestframework.vercel.app/api/rooms/');
         setRooms(response.data);
       } catch (error) {
         console.error('Error fetching rooms', error);

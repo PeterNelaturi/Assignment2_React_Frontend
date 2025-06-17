@@ -13,7 +13,7 @@
     async function fetchReservations() {
       try {
         const token = localStorage.getItem('token');
-        const url = 'http://localhost:8000/api/reservations/'.trim();
+        const url = 'https://assignment2-backendrestframework.vercel.app/api/reservations/'.trim();
 
         const response = await axios.get(url, {
           headers: { Authorization: `Token ${token}` },
@@ -29,7 +29,7 @@
       try {
         const token = localStorage.getItem('token');
         const cleanId = reservationId.toString().trim();
-        const url = `http://localhost:8000/api/reservations/${cleanId}/cancel/`.trim();
+        const url = `https://assignment2-backendrestframework.vercel.app/api/reservations/${cleanId}/cancel/`.trim();
 
         await axios.delete(url, {
           headers: { Authorization: `Token ${token}` },

@@ -6,7 +6,7 @@ import RoomList from './RoomList';
 import ReservationList from './ReservationList';
 import ReservationForm from './ReservationForm';
 import AdminPanel from './AdminPanel';
-import UserControlPanel from './UserControlPanel'; // Import UserControlPanel
+import UserControlPanel from './UserControlPanel';
 
 function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

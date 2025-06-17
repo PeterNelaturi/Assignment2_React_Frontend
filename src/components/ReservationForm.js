@@ -11,7 +11,7 @@ function ReservationForm() {
   useEffect(() => {
     async function fetchRooms() {
       try {
-        const res = await axios.get('http://localhost:8000/api/rooms/');
+        const res = await axios.get('https://assignment2-backendrestframework.vercel.app/api/rooms/');
         setRooms(res.data);
       } catch (err) {
         console.error(err);
@@ -25,7 +25,7 @@ function ReservationForm() {
   try {
     const token = localStorage.getItem('token');
     await axios.post(
-      'http://localhost:8000/api/reservations/make/',
+      'https://assignment2-backendrestframework.vercel.app/api/reservations/make/',
       {
         room_id: roomId,
         start_time: startTime,
