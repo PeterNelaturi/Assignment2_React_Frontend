@@ -1,1 +1,1 @@
-export const BaseUrl = 'https://assignment2-backendrestframework.vercel.app//api';
+export const BaseUrl = 'https://assignment2-backendrestframework.vercel.app/api';
